@@ -1,0 +1,18 @@
+
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
+    },
+    "liveServer.settings.port": 5501,
+    
+//adde to remove .exe files from the main folder
+    "files.exclude": {
+        "**/*.exe": true
+    },
+    "search.exclude": {
+        "**/*.exe": true
+    }
+}
