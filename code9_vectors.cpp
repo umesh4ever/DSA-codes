@@ -4,6 +4,20 @@
 #include<vector>
 using namespace std;
  
+//SINGLE NUMBER
+
+
+int singleNumber(vector<int>nums){
+    int ans =0;
+
+    for(int val: nums){
+        ans=ans^val;
+    }
+    return ans;
+}
+
+
+
 int main(){
 system("cls");
 
@@ -43,9 +57,9 @@ vec3.push_back(5);
 cout<<"size: "<<vec3.size()<<endl;
 cout<<"capacity: "<<vec3.capacity()<<endl;
 
-
-
-
+cout<<"Single number runnig here"<<endl;
+vector<int>nums = {2,1,9,2,1};
+cout<< singleNumber(nums);
 
 return 0;
 
