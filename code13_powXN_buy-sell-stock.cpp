@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstdlib>
+#include<vector>
  
 using namespace std;
  
@@ -29,12 +30,31 @@ double powXN(double x, int n){
 }
 
 
-int buySell()
+int buyAndSellStock(vector<int>&prices){
+    int n = prices.size();
+    
+    int maxProfit = 0;
+    int bestBuy = prices[0];
+
+    for(int i = 1;i<n;i++){
+        if(prices[i] > bestBuy){
+            maxProfit = max(prices[i] - bestBuy , maxProfit);
+        }
+        bestBuy = min(bestBuy,prices[i]);
+    }
+    if(maxProfit == 0){
+        return 0;
+    }else{
+        return maxProfit;
+    }
+}
 
 int main(){ 
 system("cls");
 
-cout<<powXN(5,-2);
+cout<<"X^N is "<<powXN(5,-2)<<endl;
 
+vector <int> prices = {7,1,5,3,6,4};
+cout<<"Max Possible Profit is "<<buyAndSellStock(prices);
 return 0;
 }
