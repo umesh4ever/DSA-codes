@@ -30,10 +30,11 @@ void sort_0_1_2(vector<int> &arr){
     }
     int idx = 0;
     for(int i = 0;i<count0;i++){
-        arr[idx++] = 0;
+        arr[idx] = 0;
+        idx++;
     }
     for(int i = 0;i<count1;i++){
-        arr[idx++] = 1;
+        arr[idx++] = 1;     //idx++ in same line (But it increments post arr[idx] is set)
     }
     for(int i = 0;i<count2;i++){
         arr[idx++] = 2;
