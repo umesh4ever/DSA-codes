@@ -5,8 +5,6 @@
 using namespace std;
  
 //SINGLE NUMBER
-
-
 int singleNumber(vector<int>nums){
     int ans =0;
 
@@ -15,8 +13,6 @@ int singleNumber(vector<int>nums){
     }
     return ans;
 }
-
-
 
 int main(){
 system("cls");
@@ -36,16 +32,15 @@ for(char val: vec2){
 }
 
 //Vector Functions
-
 cout<<endl<< "size: "<<vec2.size();
-vec2.push_back('yo'); //adds to the end of the vector
-vec2.pop_back();      //adds to the end of the vector
-cout<<vec2.front()<<endl;  //gives the first value of the vector
-cout<<vec2.back()<<endl;   //gives the last value of the vector
-cout<<vec2.at(3)<<endl;   //gives the value at index 3 of the vector
+vec2.push_back('yo');       //adds to the end of the vector
+vec2.pop_back();            //remove to the end of the vector
+cout<<vec2.front()<<endl;   //gives the first value of the vector
+cout<<vec2.back()<<endl;    //gives the last value of the vector
+cout<<vec2.at(3)<<endl;     //gives the value at index 3 of the vector
+
 
 //static vs dynamic memory allocation
-
 vector<int> vec3;
 vec3.push_back(0);
 vec3.push_back(1);
