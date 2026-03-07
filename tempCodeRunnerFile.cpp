@@ -1,2 +1,0 @@
-
-        cin>>matrix[i][j];
