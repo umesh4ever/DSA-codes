@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cstdlib>
 #include<vector>
+#include<algorithm>
  
 using namespace std;
 
@@ -37,6 +38,8 @@ vector<string> mazePath(vector<vector<int>> &maze){
     string path = "";
 
     helper(maze,0,0,path,ans);
+
+    sort(ans.begin(),ans.end());
 
     return ans;
 }
